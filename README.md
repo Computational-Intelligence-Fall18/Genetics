@@ -13,7 +13,7 @@ There is a lot of algorithms researchers use in each part and your are going to 
 
 ### Grading
 1. **Modules have weighted grades** so more work more points.
-2. **Some modules are optional for some groups**, implementing them will have bonus points with respect to the it's weight.
+2. **Some modules are optional for some groups**.
 3. **Groups are categorized based on theirs skills**. So more skills more tasks and different points for each tasks.
 4. (optional) **Unit testing** has bonus points. If you use online CI tools like Travis CI or Azure Devops for testing, you will have more bonus points!!!
 
@@ -137,16 +137,16 @@ c2.describe()
 Population is the chromosomes as friends and enemies. So all operators in mutation and crossover will be applied on these chromosomes based on nature selection idea and survival the fittest.<br><br>
 Initialization can help to find global optima faster or even stuck in local optima. So it is an important part.<br>
 There are some methods to initialize population and it's hyperparameters.<br>
-Hyperparameters are 
-1. Population Size
-2. Chromosome Genes
+**Hyperparameters** are:
+1. **Population Size**
+2. **Chromosome Genes**
 
 The most famous one is random initialization.<br>
 
-Population initialization:
-1. Pseudo Random
-2. Quasi Random Sequence
-3. Centroid Voronoi Tessellation
+**Population** initialization:
+1. **Pseudo Random**
+2. **Quasi Random Sequence**
+3. **Centroid Voronoi Tessellation**
 
 #### Psuedo Random
 This is the simplest method. Actually the `random` class in every programming language is a psuedo random number. And of course make a uniform random using this psuedo randoms.<br>
@@ -213,15 +213,15 @@ Use <a href='https://1drv.ms/b/s!ApJ0ieVzUhjim0HgkHNKMrSe87s_'>this</a> as refer
 The idea is to have better individuals at next generations. So we have to do something. Here we try to use top indviduals offsprings for next generations as parents. This help us exploit.
 
 Here is some of crossover operators:
-1. Single-point Crossover
-2. Multi-point Crossover (N-point)
-3. Uniform Crossover
-4. Flat Crossover
-5. Order Crossover (OX)
-6. Partially Mapped Crossover(PMX)
-7. Edge Recombination Crossover (ERX)
-8. Cycle Crossover (CX)
-9. Alternating Edges Crossover (AEX)
+1. **Single-point Crossover**
+2. **Multi-point Crossover (N-point)**
+3. **Uniform Crossover**
+4. **Flat Crossover**
+5. **Order Crossover (OX)**
+6. **Partially Mapped Crossover(PMX)**
+7. **Edge Recombination Crossover (ERX)**
+8. **Cycle Crossover (CX)**
+9. **Alternating Edges Crossover (AEX)**
 
 **Note: You must implement each operator for 3 type of chromosome class**. (See <a href='#Population'>Initialization</a> section).
 
