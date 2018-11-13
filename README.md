@@ -8,7 +8,7 @@ There are lots of algorithms that researchers use in each part and your are goin
 1. First of all, you should implement everything  **only using numpy or built-in libraries**.
 2. You should only implement **functions** to do the task for each module. This means that you have to assume some predefined code and implement your own code,using that.
 3. You can define sub functions for simplifying your task.
-3. We provided a **sample class of chromosomes** with some attributes. You can assume that this class will be parsed as the chromosome in your functions. 
+3. we've provided a **sample class of chromosomes** with some attributes. You can assume that this class will be parsed as the chromosome in your functions. 
 4. In some of the modules, **you need to change the class** to add some new attributes. To do so, you should **extend the class and add new attributes** to your new implemented class.
 
 ### Grading
