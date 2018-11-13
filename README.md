@@ -1,7 +1,7 @@
 
 # Genetics
 In this assignment, you will implement main parts of genetic algorithms. <br>
-There are lots of algorithms that researchers use in each part and your are going to implement the famous ones. And of course there are some rare ideas to implement here(we have to grade your work by hard things)!
+There are lots of algorithms that researchers use in each part and your are going to implement the famous ones. And of course there are some rare ideas to implement here(the harder you work the better grade you get)!
 <br><br>
 
 ### Implementations
