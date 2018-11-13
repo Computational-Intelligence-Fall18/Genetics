@@ -1,35 +1,35 @@
 
 # Genetics
 In this assignment, you will implement main parts of genetic algorithms. <br>
-There are lots of algorithms that researchers use in each part and your are going to implement the famous ones. And of course there are some rare ideas to implement here(we have to grade your work by hard things)!
+There are lots of algorithms that researchers use in each part and your are going to implement the famous ones. And of course there are some rare ideas to implement here(the harder you work the better grade you get)!
 <br><br>
 
 ### Implementations
 1. First of all, you should implement everything  **only using numpy or built-in libraries**.
 2. You should only implement **functions** to do the task for each module. This means that you have to assume some predefined code and implement your own code,using that.
 3. You can define sub functions for simplifying your task.
-3. We provided a **sample class of chromosomes** with some attributes. You can assume that this class will be parsed as the chromosome in your functions. 
+3. We've provided a **sample class of chromosomes** with some attributes. You can assume that this class will be parsed as the chromosome in your functions. 
 4. In some of the modules, **you need to change the class** to add some new attributes. To do so, you should **extend the class and add new attributes** to your new implemented class.
 
 ### Grading
 1. **Modules have weighted grades** so the more work you put in the more points you get.
 2. **Some modules are optional for some groups**.
-3. **Groups are categorized based on theirs skills**. So more skilled you are the  more tasks and different points for each task you get.
+3. **Groups are categorized based on theirs skills**. So the more skilled you are the  more tasks and different points for each task you get.
 4. (optional) **Unit testing** has bonus points. If you use online CI tools like Travis CI or Azure DevOps for testing, you'll get more bonus points!!!
 
-Note: If you want to use unit testing in your codes, please provide high quality tests. writing low quality tests is just wasting time (Go play GTA instead!)
+Note: If you want to use unit testing in your codes, please provide high quality tests. writing low quality test is just a waste time (Go play GTA instead!)
 
 ### Documentation
 1. For god's sake write something! maybe someday you have to use your own project(hopefully).
 2. You have to provide documentation for all of the function **arguments** and **return values** and of course a **simple explanation about your function** and a **numerical example**  of how would your function work.
-3. You don't know how to write docs in python? OK, google it!
+3.Don't know how to write docs in python? OK, google it!
 
 This <a href='https://realpython.com/documenting-python-code/'>tutorial</a> may help you to write better docs.
 
 ### Modules
-1. For each section, we provided some modules.
+1. we've provided some modules for each section.
 2. Each **module will be a function** as described in <a href='#Implementaitons'>implementation</a> section.
-3. There is a **little description**on  what each module is and some **links as reference**. You must read those links and implement modules based on algorithms provided in the references. In some modules, we provided **a paper related to the module**. It is your task to **study the paper and find out how to implement the modules**. 
+3. There is a **little description** on  what each module is and some **links as reference**. You must read those links and implement modules based on algorithms provided in the references. In some modules, we've provided **a paper,related to the module**. It is your task to **study the papers and find out how to implement the modules**. 
 
 ## Genetics
 This assignment includes these parts:
@@ -38,7 +38,7 @@ This assignment includes these parts:
 3. Crossover Methods
 4. Mutation Methods
 
-We will describe each section
+We will describe each section later on
 
 ## Initialization
 In this step we talk about initializing chromosomes and population.
@@ -70,7 +70,7 @@ print(chromosome.genes)
 output: [1,2,3,2,1,3,3,2,1,3,1,2]
 ```
 
-3. a integer vector of vectors like state 2, but each element has different size. So this is your duty to think about best encoding way for it.
+3.An integer vector of vectors like state 2, but each element has different size. So this is your duty to think about the best encoding way for it.
 ```python
 genes = [
     [1,2,3,4,5],
@@ -82,7 +82,7 @@ chromosome.genes = genes.flatten()
 print(chromosome.genes)
 output: [1,2,3,4,5,3,2,1,2,3,1,4,1]
 ```
-but as you, `lengths` is important. So we add another attribute to the `chromosome` class. <br>
+`lengths` is important. So we add another attribute to the `chromosome` class. <br>
 ```python
 chromosome.lengths = [5,3,4,1]
 ```
@@ -90,7 +90,7 @@ So every time you want to apply any operation on these features, you have to do 
 
 **Note: These numbers are just for demonstration purposes and in real world example, they are data points (features).**
 
-We provided a class representing a simple chromosome. You need to complete all function with respect to this class.
+We've provided a class representing a simple chromosome. You need to complete all the functions with respect to this class.
 
 
 ```python
@@ -134,9 +134,9 @@ c2.describe()
     
 
 ### Population
-Population is the chromosomes as friends and enemies. So all operators in mutation and crossover will be applied on these chromosomes based on nature selection idea and survival the fittest.<br><br>
-Initialization can help to find global optima faster or even getting stuck in local optima on the other hand. So it is an important part.<br>
-There are some methods to initialize population and it's hyperparameters.<br>
+In the population,chromosomes are like friends and enemies. So all operators in mutation and crossover will be applied on these chromosomes based on nature selection ideas and survival of the fittest.<br><br>
+Initialization can help  you to find global optima faster but can even get you stuck in the local optima on the other hand. Hence, it is an important part.<br>
+There are some methods to initialize population and they are hyperparameters.<br>
 **Hyperparameters** are:
 1. **Population Size**
 2. **Chromosome Genes**
@@ -154,19 +154,19 @@ So in your implementation, you must use `numpy.random` to initialize population 
 Just do everything random! If you need more information, check <a href='#More-Reading'>more reading</a> section below.
 
 #### Quasi Random Sequence
-the initial population is often selected randomly using <a href='#Psuedo-Random'> pseudo random</a> numbers. Usually,it is more important that the points are as **evenly distributed** as possible than that they imitate random points. In this paper, we study the use of quasi-random sequences in the initial population of a genetic algorithm. Sample points in a **quasi-random sequence are designed to have good distribution properties**.<br><br>
+the initial population is often selected randomly using <a href='#Psuedo-Random'> pseudo random</a> numbers.It’s usually more important that the points are as **evenly distributed** as possible than that they imitate random points. In this paper, we study the use of quasi-random sequences in the initial population of a genetic algorithm. Sample points in a **quasi-random sequence are designed to have good distribution properties**.<br><br>
 Use this <a href='https://1drv.ms/b/s!ApJ0ieVzUhjim0dcxwiJU3EQDvOO'>link</a> as reference.
 <br>
 
 #### Centroid Voronoi Tessellation
-In this method, we assume data points as clusters and separate them based on some criteria. And then initialize random points with respect to these regions.<br><br>
+In this method, we consider data points as clusters and will separate them based on some criteria. And then initialize random points with respect to these regions.<br><br>
 Use this <a href='https://1drv.ms/b/s!ApJ0ieVzUhjim0jXmkr282tF4Qrv'>paper</a> as reference.<br>
 
 ##### More Reading
 If you need to know more about random numbers, <a href='https://pdfs.semanticscholar.org/c307/20efa68a530a25c02213ea099c74cbc8d2bb.pdf'>this</a> and <a href='https://1drv.ms/b/s!ApJ0ieVzUhjim0YSjH7n78lISHOZ'>this</a> about different methods.
 
 ## Selection
-The idea of selection phase is to select the fittest individuals and let them pass their genes to the next generation.
+The main purpose of selection phase is to select the fittest individuals and let them pass their genes to the next generation.
 
 These are your tasks:
 
@@ -248,8 +248,7 @@ Reference:
 ### 9. Alternating Edges Crossover (AEX)
 
 ## Mutation
-The idea of mutation phase is to change the values of genes in a chromosome randomly and introduce new genetic material into
-the population, thereby increasing genetic diversity.
+The main goal of mutation phase is to change the values of genes in a chromosome randomly and introduce new genetic material into the population,to increase genetic diversity.
 
 These are your tasks:
 
