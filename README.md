@@ -321,4 +321,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.<br>
-Get in touch with <a href='https://nikronic.github.io'>Author.</a>
+Get in touch with Authors: <a href='https://nikronic.github.io'>Mohammad Doosti Lakhani</a>, <a href='https://hamed-faraji.github.io/'>Hamed Faraji</a>
