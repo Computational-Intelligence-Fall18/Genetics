@@ -226,7 +226,7 @@ Here is some of crossover operators:
 **Note: You must implement each operator for 3 types of chromosome classes**. (See <a href='#Population'>Initialization</a> section).
 
 Reference:
-1. For 1 to 4 oeprators, use <a herf='https://1drv.ms/b/s!ApJ0ieVzUhjim0zBWnOATxVrK5oC'>this</a> link.
+1. For 1 to 4 oeprators, use <a href='https://1drv.ms/b/s!ApJ0ieVzUhjim0zBWnOATxVrK5oC'>this</a> link.
 2. For 5 to 9 operators use <a href='https://1drv.ms/b/s!ApJ0ieVzUhjim0tAfWp7OZVebBaO'>this</a> link.
 
 ### 1. Single-Point crossover
