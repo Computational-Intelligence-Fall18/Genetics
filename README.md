@@ -262,11 +262,8 @@ These are your tasks:
 8. **Partial Shuffle Mutation (PSM)**
 9. **Reversal mutation**
 10. **Distance-Based Mutation Operator (DMO)**
-11. **gaussian mutation**
-12. **Swap Mutation**
-13. **Scramble Mutation**
 
-Here is a reference for 9/13 of these operators <a href='https://1drv.ms/b/s!ArsLn8kTdaA1ig9o9boJtvw6HgAY'>here</a>.
+The reference for 9/10 of these operators <a href='https://1drv.ms/b/s!ArsLn8kTdaA1ig9o9boJtvw6HgAY'>here</a>.
 
 ### 1. Uniform/Random Mutation
 
@@ -290,13 +287,6 @@ Here is a reference for 9/13 of these operators <a href='https://1drv.ms/b/s!Ars
 ### 10. Distance-Based Mutation Operator (DMO)
 You can get paper <a href='https://1drv.ms/b/s!ArsLn8kTdaA1ihAJX4daLOPEdEpZ'>here</a>.
 
-### 11. Gaussian Mutation
-
-### 12. Swap Mutation
-Use <a href='https://www.tutorialspoint.com/genetic_algorithms/genetic_algorithms_mutation.htm'>this</a> as reference.
-
-### 13. Scramble Mutation
-Same reference as above.
 
 
 # License
