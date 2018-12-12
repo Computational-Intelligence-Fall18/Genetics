@@ -282,7 +282,8 @@ The reference for 9/10 of these operators <a href='https://1drv.ms/b/s!ArsLn8kTd
 
 ### 8. Partial Shuffle Mutation (PSM)
 
-### 9. Reversal mutation
+### 9. Scramble Mutation
+Use this <a href='https://www.tutorialspoint.com/genetic_algorithms/genetic_algorithms_mutation.htm'>link</a>.
 
 ### 10. Distance-Based Mutation Operator (DMO)
 You can get paper <a href='https://1drv.ms/b/s!ArsLn8kTdaA1ihAJX4daLOPEdEpZ'>here</a>.
