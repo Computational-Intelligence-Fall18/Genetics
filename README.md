@@ -260,7 +260,7 @@ These are your tasks:
 6. **Throas Mutation**
 7. **Thrors Mutation**
 8. **Partial Shuffle Mutation (PSM)**
-9. **Reversal mutation**
+9. **Scrabmle Mutation**
 10. **Distance-Based Mutation Operator (DMO)**
 
 The reference for 9/10 of these operators <a href='https://1drv.ms/b/s!ArsLn8kTdaA1ig9o9boJtvw6HgAY'>here</a>.
